@@ -1,0 +1,18 @@
+ HTML Template with a form
+
+<!doctype html>
+<html>
+  <head>
+    <title>Greeting App</title>
+  </head>
+  <body>
+    <h2>MUZAMMIL</h2>
+    <form method="post">
+      <input type="text" name="username" placeholder="Your name">
+      <input type="submit" value="Greet Me">
+    </form>
+    {% if name %}
+      <h3>Hello, {{ name }}! Welcome to Flask App.</h3>
+    {% endif %}
+  </body>
+</html>
